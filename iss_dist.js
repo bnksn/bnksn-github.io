@@ -55,7 +55,7 @@ function displayData(data) {
         <div>Walk along the earth's surface for <b>${Math.round(globeDistance * 100) / 100}m</b> with an initial bearing of <b>${Math.round(bearing * 100) / 100}°</b>
          then travel directly away from the earth for <b>${Math.round(issHeight * 100) / 100}m</b></div>
         <article>
-                <h3>Explaination</h3>
+                <h3>Explanation</h3>
                 <p>The distance shown is not the length of the straight line connecting you and the ISS. It is calculated by considering the journey
                     along the great circle connecting you and the ISS's projection on to the earth. The associated distance is then summed with the
                     current height of the ISS.
