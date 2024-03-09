@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WalkToTheISS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Walk to the ISS">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>WalkToTheISS.online</h1>
+        </header>
+
+        <main>
+            <script src="distanceISS.js"></script>
+            <p>Enter your geographic coordinates to see how far away you are from the International Space Station.</p>
+            <form onsubmit="return submitForm(this)">
+                Latitude <input id="lat" name="lat" type="number" step = 0.0001> <br>
+                Longitude <input id="long" name="long" type="number" step = 0.0001>
+                <button type="submit" id="submit_data">Submit</button>
+            </form>
+            <form onsubmit="return getLocation()">
+                Alternatively, <button type="submit" id="location">use current location</button>
+            </form>
+            <div class="issOutput"></div>
+        </main>
+
+        <footer>
+            <hr color="black">
+            <div>The ISS's location is provided by <a href="https://wheretheiss.at/">https://wheretheiss.at/</a></div>
+            <div>The source code for this website is on <a href="https://github.com/bnksn/bnksn-github.io">github</a></div>
+        </footer>
+    </body>
+</html>
